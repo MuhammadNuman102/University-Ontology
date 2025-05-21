@@ -1,0 +1,1386 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28"
+     xml:base="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:schema="https://schema.org/"
+     xmlns:schema1="http://schema.org/"
+     xmlns:untitled-ontology-28="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://schema.org/alumniOf -->
+
+    <owl:ObjectProperty rdf:about="http://schema.org/alumniOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Student"/>
+        <rdfs:range rdf:resource="http://schema.org/CollegeOrUniversity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/hasMenu -->
+
+    <owl:ObjectProperty rdf:about="http://schema.org/hasMenu">
+        <rdfs:domain rdf:resource="http://schema.org/CafeOrCoffeeShop"/>
+        <rdfs:range rdf:resource="http://schema.org/Menu"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/memberOf -->
+
+    <owl:ObjectProperty rdf:about="http://schema.org/memberOf">
+        <rdfs:domain rdf:resource="http://schema.org/Person"/>
+        <rdfs:range rdf:resource="http://schema.org/CollegeOrUniversity"/>
+        <rdfs:range rdf:resource="http://schema.org/Department"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Faculty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/owns -->
+
+    <owl:ObjectProperty rdf:about="http://schema.org/owns">
+        <rdfs:domain rdf:resource="http://schema.org/CollegeOrUniversity"/>
+        <rdfs:range rdf:resource="http://schema.org/Hostel"/>
+        <rdfs:range rdf:resource="http://schema.org/Library"/>
+        <rdfs:range rdf:resource="http://schema.org/WebSite"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/worksFor -->
+
+    <owl:ObjectProperty rdf:about="http://schema.org/worksFor">
+        <rdfs:domain rdf:resource="http://schema.org/Person"/>
+        <rdfs:range rdf:resource="http://schema.org/CollegeOrUniversity"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Employer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#attendsCourse -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#attendsCourse">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Student"/>
+        <rdfs:range rdf:resource="http://schema.org/Course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#attendsEvent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#attendsEvent">
+        <rdfs:domain rdf:resource="http://schema.org/Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#AcademicEvent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#authoredBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#authoredBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Publications"/>
+        <rdfs:range rdf:resource="http://schema.org/Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#awardsCredential -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#awardsCredential">
+        <rdfs:domain rdf:resource="http://schema.org/CollegeOrUniversity"/>
+        <rdfs:range rdf:resource="http://schema.org/EducationalOccupationalCredential"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#belongsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#belongsTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Faculty"/>
+        <rdfs:range rdf:resource="http://schema.org/CollegeOrUniversity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#borrowsBookFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#borrowsBookFrom">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Student"/>
+        <rdfs:range rdf:resource="http://schema.org/Library"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#conducts -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#conducts">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#ExaminationBranch"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Examination"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#display -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#display">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#ExaminationBranch"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Results"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#employs -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#employs">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Employer"/>
+        <rdfs:range rdf:resource="http://schema.org/Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#enrolledIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#enrolledIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Student"/>
+        <rdfs:range rdf:resource="http://schema.org/EducationalOccupationalProgram"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#hasCourseInstance -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#hasCourseInstance">
+        <rdfs:domain rdf:resource="http://schema.org/Course"/>
+        <rdfs:range rdf:resource="http://schema.org/CourseInstance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#hasDepartment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#hasDepartment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Faculty"/>
+        <rdfs:range rdf:resource="http://schema.org/Department"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#hasPassed -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#hasPassed">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#QualifyingExamination"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#hasSelected -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#hasSelected">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Student"/>
+        <rdfs:range rdf:resource="http://schema.org/EducationalOccupationalProgram"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#hasSubjectArea -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#hasSubjectArea">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Publications"/>
+        <rdfs:range rdf:resource="http://schema.org/Department"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#hostsEvent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#hostsEvent">
+        <rdfs:domain rdf:resource="http://schema.org/SportsActivityLocation"/>
+        <rdfs:range rdf:resource="http://schema.org/SportsEvent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#hostsPublication -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#hostsPublication">
+        <rdfs:domain rdf:resource="http://schema.org/WebSite"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Publications"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#includesCourse -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#includesCourse">
+        <rdfs:domain rdf:resource="http://schema.org/EducationalOccupationalProgram"/>
+        <rdfs:range rdf:resource="http://schema.org/Course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#maintainedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#maintainedBy">
+        <rdfs:domain rdf:resource="http://schema.org/WebSite"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#ManagementStaff"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#manages -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#manages">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#ManagementStaff"/>
+        <rdfs:range rdf:resource="http://schema.org/CollegeOrUniversity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#offeredBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#offeredBy">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Employer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#offersProgram -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#offersProgram">
+        <rdfs:domain rdf:resource="http://schema.org/Department"/>
+        <rdfs:range rdf:resource="http://schema.org/EducationalOccupationalProgram"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#organizes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#organizes">
+        <rdfs:domain rdf:resource="http://schema.org/CollegeOrUniversity"/>
+        <rdfs:range rdf:resource="http://schema.org/Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#publishedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#publishedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Publications"/>
+        <rdfs:range rdf:resource="http://schema.org/CollegeOrUniversity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#residesIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#residesIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Student"/>
+        <rdfs:range rdf:resource="http://schema.org/Hostel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#sells -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#sells">
+        <rdfs:domain rdf:resource="http://schema.org/BookStore"/>
+        <rdfs:range rdf:resource="http://schema.org/Book"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#submittedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#submittedBy">
+        <rdfs:domain rdf:resource="http://schema.org/Thesis"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Student"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#takesPartIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#takesPartIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Student"/>
+        <rdfs:range rdf:resource="http://schema.org/SportsEvent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#teaches -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#teaches">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#AcademicMember"/>
+        <rdfs:range rdf:resource="http://schema.org/Course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#usedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#usedBy">
+        <rdfs:domain rdf:resource="http://schema.org/ExerciseGym"/>
+        <rdfs:range rdf:resource="http://schema.org/Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#visitedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#visitedBy">
+        <rdfs:domain rdf:resource="http://schema.org/BookStore"/>
+        <rdfs:range rdf:resource="http://schema.org/Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://schema.org/address -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/address">
+        <rdfs:domain rdf:resource="http://schema.org/CollegeOrUniversity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/applicationStartDate -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/applicationStartDate">
+        <rdfs:domain rdf:resource="http://schema.org/EducationalOccupationalProgram"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/award -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/award">
+        <rdfs:domain rdf:resource="http://schema.org/CollegeOrUniversity"/>
+        <rdfs:domain rdf:resource="http://schema.org/Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/birthDate -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/birthDate">
+        <rdfs:domain rdf:resource="http://schema.org/Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/bookEdition -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/bookEdition">
+        <rdfs:domain rdf:resource="http://schema.org/Book"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/courseCode -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/courseCode">
+        <rdfs:domain rdf:resource="http://schema.org/Course"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/courseMode -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/courseMode">
+        <rdfs:domain rdf:resource="http://schema.org/CourseInstance"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/coursePrerequisites -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/coursePrerequisites">
+        <rdfs:domain rdf:resource="http://schema.org/Course"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/datePublished -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/datePublished">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Publications"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/description -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/description">
+        <rdfs:domain rdf:resource="http://schema.org/Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/email -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/email">
+        <rdfs:domain rdf:resource="http://schema.org/CollegeOrUniversity"/>
+        <rdfs:domain rdf:resource="http://schema.org/Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/endDate -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/endDate">
+        <rdfs:domain rdf:resource="http://schema.org/EducationalOccupationalProgram"/>
+        <rdfs:domain rdf:resource="http://schema.org/Event"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Examination"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/foundingDate -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/foundingDate">
+        <rdfs:domain rdf:resource="http://schema.org/CollegeOrUniversity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/gender -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/gender">
+        <rdfs:domain rdf:resource="http://schema.org/Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/inLanguage -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/inLanguage">
+        <rdfs:domain rdf:resource="http://schema.org/Book"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/inSupportOf -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/inSupportOf">
+        <rdfs:domain rdf:resource="http://schema.org/Thesis"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/isbn -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/isbn">
+        <rdfs:domain rdf:resource="http://schema.org/Book"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/location -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/location">
+        <rdfs:domain rdf:resource="http://schema.org/Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/maximumEnrollment -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/maximumEnrollment">
+        <rdfs:domain rdf:resource="http://schema.org/EducationalOccupationalProgram"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/name -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/name">
+        <rdfs:domain rdf:resource="http://schema.org/CollegeOrUniversity"/>
+        <rdfs:domain rdf:resource="http://schema.org/Course"/>
+        <rdfs:domain rdf:resource="http://schema.org/Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/numberOfCredits -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/numberOfCredits">
+        <rdfs:domain rdf:resource="http://schema.org/Course"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/numberOfPages -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/numberOfPages">
+        <rdfs:domain rdf:resource="http://schema.org/Book"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/numberOfRooms -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/numberOfRooms">
+        <rdfs:domain rdf:resource="http://schema.org/Department"/>
+        <rdfs:domain rdf:resource="http://schema.org/Hostel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/openingHours -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/openingHours">
+        <rdfs:subPropertyOf rdf:resource="http://schema.org/openingHours"/>
+        <rdfs:domain rdf:resource="http://schema.org/BookStore"/>
+        <rdfs:domain rdf:resource="http://schema.org/CafeOrCoffeeShop"/>
+        <rdfs:domain rdf:resource="http://schema.org/CollegeOrUniversity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/paymentAccepted -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/paymentAccepted">
+        <rdfs:domain rdf:resource="http://schema.org/BookStore"/>
+        <rdfs:domain rdf:resource="http://schema.org/CafeOrCoffeeShop"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/priceRange -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/priceRange">
+        <rdfs:domain rdf:resource="http://schema.org/BookStore"/>
+        <rdfs:domain rdf:resource="http://schema.org/CafeOrCoffeeShop"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/sport -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/sport">
+        <rdfs:domain rdf:resource="http://schema.org/SportsEvent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/startDate -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/startDate">
+        <rdfs:domain rdf:resource="http://schema.org/EducationalOccupationalProgram"/>
+        <rdfs:domain rdf:resource="http://schema.org/Event"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Examination"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/telephone -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/telephone">
+        <rdfs:domain rdf:resource="http://schema.org/CollegeOrUniversity"/>
+        <rdfs:domain rdf:resource="http://schema.org/Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/url -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/url">
+        <rdfs:domain rdf:resource="http://schema.org/WebSite"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#area -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#area">
+        <rdfs:domain rdf:resource="http://schema.org/CafeOrCoffeeShop"/>
+        <rdfs:domain rdf:resource="http://schema.org/CollegeOrUniversity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#cgpa -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#cgpa">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#designation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#designation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#AcademicMember"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#AdministrativeStaff"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#ManagementStaff"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#durationMinutes -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#durationMinutes">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Examination"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#employeeID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#employeeID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#AdministrativeStaff"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#ManagementStaff"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#enrollmentYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#enrollmentYear">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#examTitle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#examTitle">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Examination"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#graduationYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#graduationYear">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Alumni"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#menuItem -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#menuItem">
+        <rdfs:domain rdf:resource="http://schema.org/Menu"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#publicationTitle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#publicationTitle">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Publications"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#resultDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#resultDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Results"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#studentId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#studentId">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://schema.org/Book -->
+
+    <owl:Class rdf:about="http://schema.org/Book"/>
+    
+
+
+    <!-- http://schema.org/BookStore -->
+
+    <owl:Class rdf:about="http://schema.org/BookStore"/>
+    
+
+
+    <!-- http://schema.org/CafeOrCoffeeShop -->
+
+    <owl:Class rdf:about="http://schema.org/CafeOrCoffeeShop"/>
+    
+
+
+    <!-- http://schema.org/CollegeOrUniversity -->
+
+    <owl:Class rdf:about="http://schema.org/CollegeOrUniversity"/>
+    
+
+
+    <!-- http://schema.org/Company -->
+
+    <owl:Class rdf:about="http://schema.org/Company">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Employer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Course -->
+
+    <owl:Class rdf:about="http://schema.org/Course"/>
+    
+
+
+    <!-- http://schema.org/CourseInstance -->
+
+    <owl:Class rdf:about="http://schema.org/CourseInstance"/>
+    
+
+
+    <!-- http://schema.org/Department -->
+
+    <owl:Class rdf:about="http://schema.org/Department"/>
+    
+
+
+    <!-- http://schema.org/EducationalOccupationalCredential -->
+
+    <owl:Class rdf:about="http://schema.org/EducationalOccupationalCredential"/>
+    
+
+
+    <!-- http://schema.org/EducationalOccupationalProgram -->
+
+    <owl:Class rdf:about="http://schema.org/EducationalOccupationalProgram"/>
+    
+
+
+    <!-- http://schema.org/Event -->
+
+    <owl:Class rdf:about="http://schema.org/Event"/>
+    
+
+
+    <!-- http://schema.org/ExerciseGym -->
+
+    <owl:Class rdf:about="http://schema.org/ExerciseGym">
+        <rdfs:subClassOf rdf:resource="http://schema.org/SportsActivityLocation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/GolfCourse -->
+
+    <owl:Class rdf:about="http://schema.org/GolfCourse">
+        <rdfs:subClassOf rdf:resource="http://schema.org/SportsActivityLocation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Hostel -->
+
+    <owl:Class rdf:about="http://schema.org/Hostel"/>
+    
+
+
+    <!-- http://schema.org/Library -->
+
+    <owl:Class rdf:about="http://schema.org/Library"/>
+    
+
+
+    <!-- http://schema.org/Menu -->
+
+    <owl:Class rdf:about="http://schema.org/Menu"/>
+    
+
+
+    <!-- http://schema.org/Person -->
+
+    <owl:Class rdf:about="http://schema.org/Person">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://schema.org/name"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/SportsActivityLocation -->
+
+    <owl:Class rdf:about="http://schema.org/SportsActivityLocation"/>
+    
+
+
+    <!-- http://schema.org/SportsEvent -->
+
+    <owl:Class rdf:about="http://schema.org/SportsEvent">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/StadiumOrArena -->
+
+    <owl:Class rdf:about="http://schema.org/StadiumOrArena">
+        <rdfs:subClassOf rdf:resource="http://schema.org/SportsActivityLocation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/TennisComplex -->
+
+    <owl:Class rdf:about="http://schema.org/TennisComplex">
+        <rdfs:subClassOf rdf:resource="http://schema.org/SportsActivityLocation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Thesis -->
+
+    <owl:Class rdf:about="http://schema.org/Thesis"/>
+    
+
+
+    <!-- http://schema.org/WebSite -->
+
+    <owl:Class rdf:about="http://schema.org/WebSite"/>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#AcademicEvent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#AcademicEvent">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#AcademicMember -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#AcademicMember">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#AdministrativeStaff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#AdministrativeStaff">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Alumni -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Alumni">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#BachelorProgram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#BachelorProgram">
+        <rdfs:subClassOf rdf:resource="http://schema.org/EducationalOccupationalProgram"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Employer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Employer"/>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Examination -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Examination"/>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#ExaminationBranch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#ExaminationBranch"/>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Faculty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Faculty"/>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#GovernmentAgency -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#GovernmentAgency">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Employer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#GraduateCourse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#GraduateCourse">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#GraduateStudent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#GraduateStudent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Student"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#ManagementStaff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#ManagementStaff">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#MasterProgram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#MasterProgram">
+        <rdfs:subClassOf rdf:resource="http://schema.org/EducationalOccupationalProgram"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#MbbsProgram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#MbbsProgram">
+        <rdfs:subClassOf rdf:resource="http://schema.org/EducationalOccupationalProgram"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#MedicalCourse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#MedicalCourse">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#PhdCourse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#PhdCourse">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#PhdProgram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#PhdProgram">
+        <rdfs:subClassOf rdf:resource="http://schema.org/EducationalOccupationalProgram"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#PhdStudent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#PhdStudent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Student"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Publications -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Publications"/>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#QualifyingExamination -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#QualifyingExamination"/>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Results -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Results"/>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Student">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#studentId"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#UndergraduateCourse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#UndergraduateCourse">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#UndergraduateStudent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#UndergraduateStudent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Student"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#AdmStaff1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#AdmStaff1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#AdministrativeStaff"/>
+        <untitled-ontology-28:manages rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Hostel1"/>
+        <schema1:name>Tariq Raza</schema1:name>
+        <schema1:telephone rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64862191</schema1:telephone>
+        <untitled-ontology-28:designation>Director</untitled-ontology-28:designation>
+        <untitled-ontology-28:employeeID>AM101</untitled-ontology-28:employeeID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Alumni1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Alumni1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Alumni"/>
+        <schema1:alumniOf rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#UniversityOfSargodha"/>
+        <schema1:email>abc@gmail.com</schema1:email>
+        <schema1:name>Ahmad</schema1:name>
+        <untitled-ontology-28:graduationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2023</untitled-ontology-28:graduationYear>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#BSCSProgram1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#BSCSProgram1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#BachelorProgram"/>
+        <untitled-ontology-28:includesCourse rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Course1"/>
+        <schema1:maximumEnrollment rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">400</schema1:maximumEnrollment>
+        <schema1:name>BS Computer Science</schema1:name>
+        <schema1:startDate>2022-11-07</schema1:startDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Book1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Book1">
+        <rdf:type rdf:resource="http://schema.org/Book"/>
+        <untitled-ontology-28:authoredBy rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#member1"/>
+        <schema1:bookEdition>First</schema1:bookEdition>
+        <schema1:inLanguage>Engllish</schema1:inLanguage>
+        <schema1:isbn>978-0-306-40615-7</schema1:isbn>
+        <schema1:name>Introduction to Programming</schema1:name>
+        <schema1:numberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</schema1:numberOfPages>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#BookStore1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#BookStore1">
+        <rdf:type rdf:resource="http://schema.org/BookStore"/>
+        <untitled-ontology-28:visitedBy rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#UgStd1"/>
+        <schema1:name>UOS main bookstore</schema1:name>
+        <schema1:openingHours>8am-5pm</schema1:openingHours>
+        <schema1:priceRange>500 to 2000</schema1:priceRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Canteen1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Canteen1">
+        <rdf:type rdf:resource="http://schema.org/CafeOrCoffeeShop"/>
+        <untitled-ontology-28:visitedBy rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#UgStd1"/>
+        <schema1:location>Near Math Department</schema1:location>
+        <schema1:name>UOS Canteen1</schema1:name>
+        <schema1:openingHours>9am-5pm</schema1:openingHours>
+        <schema1:priceRange>200 t0 5000</schema1:priceRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Course1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Course1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#UndergraduateCourse"/>
+        <schema1:courseCode>Cs101</schema1:courseCode>
+        <schema1:courseMode>Physical</schema1:courseMode>
+        <schema1:coursePrerequisites>Discrete structure</schema1:coursePrerequisites>
+        <schema1:name>Artifical Intelligence</schema1:name>
+        <schema1:numberOfCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</schema1:numberOfCredits>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Dept1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Dept1">
+        <rdf:type rdf:resource="http://schema.org/Department"/>
+        <untitled-ontology-28:offersProgram rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#BSCSProgram1"/>
+        <schema1:email>cs@uos.edu.pk</schema1:email>
+        <schema1:name>Department Of Computer Science</schema1:name>
+        <schema1:numberOfRooms rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</schema1:numberOfRooms>
+        <schema1:telephone rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">047839281</schema1:telephone>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Faculty1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Faculty1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Faculty"/>
+        <untitled-ontology-28:belongsTo rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#UniversityOfSargodha"/>
+        <untitled-ontology-28:hasDepartment rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Dept1"/>
+        <schema1:name>Faculty Of Sciemces</schema1:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Hostel1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Hostel1">
+        <rdf:type rdf:resource="http://schema.org/Hostel"/>
+        <schema1:location>North Campus Block</schema1:location>
+        <schema1:name>Iqbal Hall</schema1:name>
+        <untitled-ontology-28:area>100 sq. feet</untitled-ontology-28:area>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Library1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Library1">
+        <rdf:type rdf:resource="http://schema.org/Library"/>
+        <untitled-ontology-28:visitedBy rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#UgStd1"/>
+        <schema1:name>Wazeer Agha Library</schema1:name>
+        <schema1:openingHours>8am-8pm</schema1:openingHours>
+        <untitled-ontology-28:area>50 sq.feet</untitled-ontology-28:area>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Publication1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Publication1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Publications"/>
+        <untitled-ontology-28:publishedBy rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#UniversityOfSargodha"/>
+        <schema1:datePublished>2025-03-01</schema1:datePublished>
+        <schema1:name>UOS Quarterly Magzine</schema1:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#SportsEvent1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#SportsEvent1">
+        <rdf:type rdf:resource="http://schema.org/SportsEvent"/>
+        <schema1:endDate>2025-04-29</schema1:endDate>
+        <schema1:name>Annual Sports Gala 2025</schema1:name>
+        <schema1:startDate>2025-04-17</schema1:startDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Stadium1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Stadium1">
+        <rdf:type rdf:resource="http://schema.org/StadiumOrArena"/>
+        <untitled-ontology-28:hostsEvent rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#SportsEvent1"/>
+        <schema1:location>South Block</schema1:location>
+        <schema1:name>Main Cricket Ground</schema1:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#UgStd1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#UgStd1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#UndergraduateStudent"/>
+        <untitled-ontology-28:attendsCourse rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Course1"/>
+        <untitled-ontology-28:attendsEvent rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#seminar1"/>
+        <untitled-ontology-28:enrolledIn rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#BSCSProgram1"/>
+        <untitled-ontology-28:hasPassed rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#exam1"/>
+        <untitled-ontology-28:hasSelected rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#BSCSProgram1"/>
+        <untitled-ontology-28:residesIn rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Hostel1"/>
+        <untitled-ontology-28:takesPartIn rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#SportsEvent1"/>
+        <schema1:address>chak 33 NB Sargodha</schema1:address>
+        <schema1:birthDate>2003-09-15</schema1:birthDate>
+        <schema1:email>numan@gmail.com.pk</schema1:email>
+        <schema1:name>Muhammad Numan</schema1:name>
+        <schema1:telephone rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">03439802221</schema1:telephone>
+        <untitled-ontology-28:cgpa rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</untitled-ontology-28:cgpa>
+        <untitled-ontology-28:enrollmentYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2022</untitled-ontology-28:enrollmentYear>
+        <untitled-ontology-28:studentId>BSCS51F22R018</untitled-ontology-28:studentId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#UniversityOfSargodha -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#UniversityOfSargodha">
+        <rdf:type rdf:resource="http://schema.org/CollegeOrUniversity"/>
+        <schema1:owns rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Hostel1"/>
+        <schema1:owns rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Stadium1"/>
+        <schema1:owns rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#web1"/>
+        <schema1:foundingDate>2002-01-01</schema1:foundingDate>
+        <schema1:name>University Of Sargodha</schema1:name>
+        <schema1:telephone rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">048923010</schema1:telephone>
+        <untitled-ontology-28:area>250 square ft</untitled-ontology-28:area>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#exam1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#exam1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Examination"/>
+        <schema1:endDate>2025-04-15</schema1:endDate>
+        <schema1:startDate>2025-04-07</schema1:startDate>
+        <untitled-ontology-28:durationMinutes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">90</untitled-ontology-28:durationMinutes>
+        <untitled-ontology-28:examTitle>Mid Term Exam CS 101</untitled-ontology-28:examTitle>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#member1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#member1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#AcademicMember"/>
+        <untitled-ontology-28:teaches rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#Course1"/>
+        <schema1:email>hussam@uos.edu.pk</schema1:email>
+        <schema1:name>Sir Hussam Ali</schema1:name>
+        <untitled-ontology-28:designation>Professor</untitled-ontology-28:designation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#seminar1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#seminar1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#AcademicEvent"/>
+        <schema1:name>Spring Research Seminar 2024</schema1:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#web1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/qc/ontologies/2025/3/untitled-ontology-28#web1">
+        <rdf:type rdf:resource="http://schema.org/WebSite"/>
+        <schema1:url>https://uos.edu.pk</schema1:url>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
